@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+  <head>
+  	<title>Scalable Java Script Development</title>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+    <script src="src/loader/head.load.min.js"></script>
+    <script>
+        head.load("src/js/external/angular/angular.min.js", function() {
+            // Call a function when done
+            console.log("Done loading Application");
+        });
+    </script>
+  </body>
+</html>
